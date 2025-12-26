@@ -38,14 +38,14 @@ export default function Hero() {
                 />
             </Motion.div>
 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight font-display leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight font-display leading-tight">
                 Hamza Mathouthi <br/>
-                <span className="text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 block mt-4">
+                <span className="text-2xl sm:text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 block mt-4">
                     From Insight to ROI
                 </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed font-sans">
+            <p className="text-base sm:text-lg md:text-xl max-w-[90%] sm:max-w-2xl leading-relaxed font-sans text-yellow-300" style={{ filter: 'drop-shadow(0 0 10px rgba(255, 215, 0, 0.6))' }}>
                 Turning complex data into strategic revenue engines. Specializing in Business Intelligence, Digital Growth, and Full-Stack Solutions.
             </p>
 

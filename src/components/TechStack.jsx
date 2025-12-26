@@ -7,23 +7,23 @@ import rSvg from '../assets/R_logo.svg.png';
 
 const AutoScroller = ({ items }) => {
   return (
-    <div className="relative overflow-x-auto cursor-grab active:cursor-grabbing">
+    <div className="relative overflow-x-auto cursor-grab active:cursor-grabbing px-2">
       <style>{`
         @keyframes techscroll {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
       `}</style>
-      <div className="flex gap-4 w-max animate-[techscroll_20s_linear_infinite] snap-x snap-mandatory scroll-smooth">
+      <div className="flex gap-3 sm:gap-4 w-max animate-[techscroll_18s_linear_infinite] snap-x snap-mandatory scroll-smooth">
         {[...items, ...items].map((item, idx) => (
           <div
             key={`${item.name}-${idx}`}
-            className="glass-card p-3 w-28 sm:w-32 flex flex-col items-center gap-2 hover:border-white/20 snap-start"
+            className="glass-card p-2.5 w-24 sm:w-28 flex flex-col items-center gap-2 hover:border-white/20 snap-start shrink-0"
           >
-            <div className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 border border-white/10">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-white/5 border border-white/10">
               {item.icon}
             </div>
-            <div className="text-xs text-gray-300">{item.name}</div>
+            <div className="text-[11px] sm:text-xs text-gray-300">{item.name}</div>
           </div>
         ))}
       </div>
@@ -91,13 +91,13 @@ export default function TechStack() {
   return (
     <section className="py-16 relative">
       <div className="container mx-auto px-6">
-        <div className="w-full flex justify-center overflow-x-auto">
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-2 py-2 mx-auto">
+        <div className="w-full flex justify-start sm:justify-center overflow-x-auto px-2">
+          <div className="inline-flex min-w-max items-center gap-2 bg-white/5 border border-white/10 rounded-full px-2 sm:px-3 py-2 mx-0 sm:mx-auto shrink-0">
             {categories.map((c) => (
               <button
                 key={c.key}
                 onClick={() => setActive(c.key)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors ${
                   active === c.key ? 'bg-white text-black' : 'text-gray-300 hover:text-white'
                 }`}
               >

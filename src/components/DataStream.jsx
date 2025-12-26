@@ -99,19 +99,19 @@ export default function DataStream({ speedFactor = 1.35 }) {
     <section className="relative py-24">
       <div className="container mx-auto px-6">
         <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 bg-transparent pointer-events-none">
-          <canvas ref={canvasRef} className="block w-full h-[300px]" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-            <h2 className="text-5xl md:text-6xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-[textGlow_2.2s_ease-in-out_infinite_alternate]">
+          <canvas ref={canvasRef} className="block w-full h-[240px] sm:h-[280px] md:h-[300px]" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 sm:gap-4 px-3">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-[textGlow_2.2s_ease-in-out_infinite_alternate]">
               FROM DATA TO CHARTS
             </h2>
-            <div className="flex justify-center gap-10 flex-wrap">
-              <h3 className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500 animate-[textGlow_3.6s_ease-in-out_infinite_alternate]" style={{ animationDelay: '0.4s' }}>
+            <div className="flex justify-center gap-6 sm:gap-10 flex-wrap">
+              <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-500 animate-[textGlow_3.6s_ease-in-out_infinite_alternate]" style={{ animationDelay: '0.4s' }}>
                 CLEAN DATA
               </h3>
-              <h3 className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500 animate-[textGlow_4.2s_ease-in-out_infinite_alternate]" style={{ animationDelay: '0.8s' }}>
+              <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500 animate-[textGlow_4.2s_ease-in-out_infinite_alternate]" style={{ animationDelay: '0.8s' }}>
                 CALCULATION
               </h3>
-              <h3 className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-500 animate-[textGlow_5s_ease-in-out_infinite_alternate]" style={{ animationDelay: '1.2s' }}>
+              <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-500 animate-[textGlow_5s_ease-in-out_infinite_alternate]" style={{ animationDelay: '1.2s' }}>
                 CHARTS
               </h3>
             </div>
